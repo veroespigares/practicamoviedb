@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/ivItem"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:contentDescription="@string/app_name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/tvValoracion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:paddingRight="16dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_below="@+id/tvVotos"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="21dp"
+        android:layout_alignRight="@+id/icono"
+        android:layout_alignEnd="@+id/icono" />
+
+
+    <TextView
+        android:id="@+id/tvVotos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:paddingRight="16dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/tvSinopsis"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tvSinopsis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:paddingRight="16dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/tvTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:paddingRight="16dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_below="@+id/ivItem"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" />
+
+    <ImageView
+        android:id="@+id/icono"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/estrellas"
+        android:layout_below="@+id/tvVotos" />
+
+    <TextView
+        android:id="@+id/tvAno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:paddingRight="16dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="49dp"
+        android:layout_below="@+id/icono"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tvDuracion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:paddingRight="16dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_above="@+id/tvAno"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
